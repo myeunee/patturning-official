@@ -3,8 +3,16 @@ from PIL import Image
 from streamlit_option_menu import option_menu
 
 # 이미지 불러오기
+pageIcon = Image.open("page_icon.png")
 image1 = Image.open("patturning_bg.png")
 image2 = Image.open("guideline.png")
+
+#Layout
+st.set_page_config(
+    page_title="PatTurning",
+    layout="wide",
+    page_icon=pageIcon,
+    initial_sidebar_state="expanded")
 
 #Data Pull and Functions
 st.markdown("""
@@ -15,11 +23,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-#Layout
-st.set_page_config(
-    page_title="PatTurning",
-    layout="wide",
-    initial_sidebar_state="expanded")
+
 
 #Options Menu
 with st.sidebar:
