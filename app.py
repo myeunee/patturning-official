@@ -63,4 +63,4 @@ st.write("GitHub Repository: [Dark Pattern Detection Project](https://github.com
 
 # 라이센스 섹션 (추후 업데이트 예정)
 st.header("License")
-st.write("라이센스는 추후 결정될 예정입니다.")
+st.write("라이센스는 추후 결정될 예정입니다.") 
