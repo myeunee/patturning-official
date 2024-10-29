@@ -4,6 +4,7 @@ from streamlit_option_menu import option_menu
 
 # 이미지 불러오기
 pageIcon = Image.open("page_icon.png")
+mainIcon= Image.open("main_icon.png")
 image1 = Image.open("patturning_bg.png")
 image2 = Image.open("guideline.png")
 
@@ -28,7 +29,7 @@ st.markdown("""
 #Options Menu
 with st.sidebar:
     selected = option_menu('PatTurning', ["Intro", 'About','How To Contribute', 'Commit Convention'], 
-        icons=['round_pushpin','round_pushpin','round_pushpin', 'round_pushpin'],menu_icon='dizzy', default_index=0)
+        icons=['round_pushpin','round_pushpin','round_pushpin', 'round_pushpin'],menu_icon=pageIcon, default_index=0)
 
 
 
@@ -36,6 +37,12 @@ with st.sidebar:
 #Intro Page
 if selected=="Intro":
     #Header
+    left_col, right_col = st.columns(2)
+    left_col.image(mainIcon, caption="PatTurning Icon", use_column_width=True)
+    right_col.markdown("# Rascore")
+    right_col.markdown("### A tool for analyzing RAS protein structures")
+    right_col.markdown("**Created by Mitchell Parker and Roland Dunbrack**")
+    right_col.markdown("**Fox Chase Cancer Center**")
     st.title('PatTurning')
     st.subheader('')
     st.write("Patturning은 온라인 쇼핑몰에서 발생하는 다크 패턴을 탐지하여 사용자에게 보다 투명한 쇼핑 경험을 제공합니다.")
