@@ -28,10 +28,7 @@ st.markdown("""
 
 #Options Menu
 with st.sidebar:
-    selected = option_menu('PatTurning', ["Intro", 'About','How To Contribute', 'Commit Convention'], 
-        icons=['round_pushpin','round_pushpin','round_pushpin', 'round_pushpin'],menu_icon=pageIcon, default_index=0)
-
-
+    selected = option_menu('PatTurning', ["💡Intro", '📚About','❓How To Contribute', '❗Commit Convention'], default_index=0)
 
 
 #Intro Page
