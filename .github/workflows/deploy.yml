@@ -21,4 +21,4 @@ jobs:
           cd /home/${{secrets.USERNAME}}/patturning-official
           git pull origin main
           source venv/bin/activate
-          nohup streamlit run app.py &
+          nohup streamlit run app.py &> streamlit.log &
