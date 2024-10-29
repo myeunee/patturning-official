@@ -36,7 +36,7 @@ with st.sidebar:
 if selected == "Intro":
     # Header
     left_col, right_col = st.columns(2)
-    left_col.image(mainIcon, caption="PatTurning Icon", use_column_width=True)
+    # left_col.image(mainIcon, caption="PatTurning Icon", use_column_width=True)
     right_col.markdown("# Rascore")
     right_col.markdown("### A tool for analyzing RAS protein structures")
     right_col.markdown("**Created by Mitchell Parker and Roland Dunbrack**")
