@@ -26,11 +26,6 @@ st.markdown("""
 
 
 
-#Options Menu
-with st.sidebar:
-    selected = option_menu('PatTurning', ["💡Intro", '📚About','❓How To Contribute', '❗Commit Convention'], 
-                           menu_icon="cast", default_index=0)
-
 
 # Intro 페이지
 if selected == "Intro":
