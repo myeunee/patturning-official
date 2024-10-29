@@ -20,6 +20,5 @@ jobs:
         script: |
           cd /home/${{secrets.USERNAME}}/patturning-official
           git pull origin main
-          pkill -f streamlit  # 기존 Streamlit 프로세스 종료
           source venv/bin/activate
           nohup streamlit run app.py &
