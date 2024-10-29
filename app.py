@@ -32,15 +32,18 @@ with st.sidebar:
                            menu_icon="cast", default_index=0)
 
 
-#Intro Page
-if selected=="Intro":
-    #Header
+# Intro 페이지
+if selected == "Intro":
+    # Header
     left_col, right_col = st.columns(2)
     left_col.image(mainIcon, caption="PatTurning Icon", use_column_width=True)
     right_col.markdown("# Rascore")
     right_col.markdown("### A tool for analyzing RAS protein structures")
     right_col.markdown("**Created by Mitchell Parker and Roland Dunbrack**")
     right_col.markdown("**Fox Chase Cancer Center**")
+    
+    st.title('PatTurning')
+    st.write("Patturning은 온라인 쇼핑몰에서 발생하는 다크 패턴을 탐지하여 사용자에게 보다 투명한 쇼핑 경험을 제공합니다.")
     st.divider()
 
 
