@@ -2,11 +2,18 @@ import streamlit as st
 from PIL import Image
 from streamlit_option_menu import option_menu
 
-
 # 이미지 불러오기
 image1 = Image.open("patturning_bg.png")
 image2 = Image.open("guideline.png")
 
+#Data Pull and Functions
+st.markdown("""
+<style>
+.big-font {
+    font-size:80px !important;
+}
+</style>
+""", unsafe_allow_html=True)
 
 #Layout
 st.set_page_config(
