@@ -28,7 +28,8 @@ st.markdown("""
 
 #Options Menu
 with st.sidebar:
-    selected = option_menu('PatTurning', ["💡Intro", '📚About','❓How To Contribute', '❗Commit Convention'], default_index=0)
+    selected = option_menu('PatTurning', ["💡Intro", '📚About','❓How To Contribute', '❗Commit Convention'], 
+                           menu_icon="cast", default_index=0)
 
 
 #Intro Page
@@ -40,9 +41,6 @@ if selected=="Intro":
     right_col.markdown("### A tool for analyzing RAS protein structures")
     right_col.markdown("**Created by Mitchell Parker and Roland Dunbrack**")
     right_col.markdown("**Fox Chase Cancer Center**")
-    st.title('PatTurning')
-    st.subheader('')
-    st.write("Patturning은 온라인 쇼핑몰에서 발생하는 다크 패턴을 탐지하여 사용자에게 보다 투명한 쇼핑 경험을 제공합니다.")
     st.divider()
 
 
