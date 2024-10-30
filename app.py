@@ -3,10 +3,10 @@ from PIL import Image
 from streamlit_option_menu import option_menu
 
 # 이미지 불러오기
-pageIcon = Image.open("page_icon.png")
-mainIcon= Image.open("main_icon.png")
-image1 = Image.open("patturning_bg.png")
-image2 = Image.open("guideline.png")
+pageIcon = Image.open("image/page_icon.png")
+mainIcon= Image.open("image/main_icon.png")
+image1 = Image.open("image/patturning_bg.png")
+image2 = Image.open("image/guideline.png")
 
 #Layout
 st.set_page_config(
