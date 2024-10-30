@@ -5,8 +5,8 @@ from streamlit_option_menu import option_menu
 # 이미지 불러오기
 pageIcon = Image.open("image/page_icon.png")
 mainIcon= Image.open("image/main_icon.png")
-image1 = Image.open("image/patturning_bg.png")
-image2 = Image.open("image/guideline.png")
+patturning_bg = Image.open("image/patturning_bg.png")
+guideline = Image.open("image/guideline.png")
 issues = Image.open("image/issues.png")
 mit = Image.open("image/mit.jpg")
 
@@ -34,7 +34,7 @@ with st.sidebar:
 # Intro 페이지
 if selected == "Intro":
     # Header
-    st.image(image1, use_column_width=True, width=300)
+    st.image(patturning_bg, use_column_width=True, width=300)
     st.markdown("""
 ## 현명한 소비의 시작, PatTurning
 
@@ -45,7 +45,9 @@ if selected == "Intro":
 - 3️⃣사용자는 다크 패턴이 의심되는 텍스트를 직접 리포트할 수 있으므로, 다크 패턴 탐지 정확도를 높일 수 있음
                 
   """)
+    
     st.write("")
+    st.divider()
     st.markdown("""
 ### ⚒️ Tech
 PatTurning이 사용하는 대표 오픈소스는 다음과 같다.
@@ -91,42 +93,52 @@ See [LICENSE](https://github.com/HyejiYu/PatTuning/blob/main/LICENSE) for detail
 
 #Intro Page
 if selected=="About":
-    # 기능 소개 섹션
-    st.header("Patturning의 기능")
+    st.markdown("""
+## Patturning의 기능
+
+### 1️. 다크패턴 탐지 기능
+
+Patturning의 **다크 패턴 탐지 기능**을 통해 웹사이트에서 특정 문구가 등장할 때 해당 문구를 자동으로 블러 처리하여 사용자가 쉽게 인지할 수 있도록 한다.
+  """)
+
+    st.write("")
     st.divider()
+    st.markdown("""
+#### 다크 패턴 문구 예시
+  """)
+    st.image(guideline, caption="공정거래위원회 가이드라인", use_column_width=True, width=300)
+    st.markdown("""
 
-    st.markdown("## 1️⃣ 다크패턴 탐지 기능")
-    st.write("""
-    Patturning의 **다크 패턴 탐지 기능**을 통해 웹사이트에서 특정 문구가 등장할 때 해당 문구를 자동으로 블러 처리하여 사용자가 쉽게 인지할 수 있도록 합니다.
-    """)
-    st.image(image2, caption="2023년 공정거래위원회 가이드라인", use_column_width=True)
 
-    # 다크 패턴 문구 예시 표
-    st.write("다음은 저희 팀이 분류한 다크 패턴 문구 예시입니다.")
-    st.table({
-        "다크패턴": ["오도형", "압박형(소비유도)", "압박형(다른사람행동알림)", "압박형(긴급성)"],
-        "유형": ["아니요, 정가를 지불하고 싶습니다", "45개 남음", "월간 구매 34,422개", "품절임박! 딱 4개 남았어요"]
-    })
+| 다크패턴              | 유형                             |
+|-----------------------|----------------------------------|
+| 오도형                | 아니요, 정가를 지불하고 싶습니다 |
+| 압박형(소비유도)      | 45개 남음                        |
+| 압박형(다른사람행동알림) | 월간 구매 34,422개              |
+| 압박형(긴급성)         | 품절임박! 딱 4개 남았어요        |
 
-    # 가격 추적 기능 소개
-    st.markdown("## 2️⃣ 온라인 쇼핑몰 상품 가격 추적")
-    st.write("""
-    Patturning은 온라인 쇼핑몰의 상품 가격을 추적하여 소비자가 다크 패턴에 쉽게 영향을 받지 않도록 지원합니다. 
-    """)
-    # (여기에는 추적된 가격 변동 그래프를 추가할 수 있습니다.)
-    st.divider()
+---
+                
 
-    # 다크 패턴 신고 기능 소개
-    st.markdown("## 3️⃣ 다크패턴 문구 신고 기능")
-    st.divider()
+### 2. 온라인 쇼핑몰 상품 가격 추적
 
-    # 기대 효과 섹션
-    st.markdown("## 💡 Patturning의 기대 효과")
-    st.write("""
-    - **소비자 보호 강화**: 비합리적인 구매 유도 행위를 차단하여 소비자의 권익을 보호합니다.
-    - **윤리적인 웹 디자인**: 기업들이 윤리적인 웹 디자인을 추구하도록 유도합니다.
-    - **사회적 가치 창출**: 투명한 커뮤니케이션 촉진을 통해 소비 환경 개선을 목표로 합니다.
-    """)
+Patturning은 온라인 쇼핑몰의 상품 가격을 추적하여 소비자가 다크 패턴에 쉽게 영향을 받지 않도록 지원한다.
+
+---
+
+### 3. 다크패턴 문구 신고 기능
+
+Patturning은 사용자가 직접적으로 불편함을 느끼는 다크패턴 요소를 신고 기능을 통해 수집한다.
+이를 통해, 서비스가 기반을 두고 있는 필터링 모델의 신뢰도를 지속적으로 보완하여 소비자 불편을 제거하는 것을 목표로 한다.
+
+---
+
+### 💡 Patturning의 기대 효과
+
+- **소비자 보호 강화**: 비합리적인 구매 유도 행위를 차단하여 소비자의 권익을 보호한다.
+- **윤리적인 웹 디자인**: 기업들이 윤리적인 웹 디자인을 추구하도록 유도한다.
+- **사회적 가치 창출**: 투명한 커뮤니케이션 촉진을 통해 소비 환경 개선을 목표로 한다.
+""")
     st.divider()
 
 
