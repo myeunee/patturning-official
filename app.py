@@ -37,16 +37,19 @@ if selected == "Intro":
     st.image(image1, use_column_width=True, width=300)
     st.title('PatTurning')
     st.markdown("""
-## _현명한 소비의 시작, 팻터닝_
+#### _현명한 소비의 시작, 팻터닝_
 
 ##### 당신의 합리적인 소비를 위해, PatTurning이 다크패턴을 필터링합니다!
 
-> PatTurning은 성장하는 이커머스 시장에서 점점 더 기승을 부리는 다크 패턴으로부터 소비자를 보호하기 위해 설계되었다. 
+PatTurning은 성장하는 이커머스 시장에서 점점 더 기승을 부리는 다크 패턴으로부터 소비자를 보호하기 위해 설계되었다. 
 
 - 1️⃣ 온라인 쇼핑 중 혼란이나 압박을 유발할 수 있는 잘못된 요소들을 필터링
 - 2️⃣ 최근 가격 변동을 분석하여 거짓 할인 전략을 판별해 소비자에게 합리적인 구매 근거 제공
-- 3️⃣사용자는 다크 패턴이 의심되는 텍스트를 직접 리포트할 수 있으므로, 다크 패턴 탐지 정확도를 높일 수 있음음
-
+- 3️⃣사용자는 다크 패턴이 의심되는 텍스트를 직접 리포트할 수 있으므로, 다크 패턴 탐지 정확도를 높일 수 있음
+                
+  
+                 
+    
 ### ⚒️ Tech
 PatTurning이 사용하는 대표 오픈소스는 다음과 같다.
 - **[Airflow]** - 데이터 파이프라인을 자동화, 워크플로우 관리
@@ -60,20 +63,27 @@ PatTurning이 사용하는 대표 오픈소스는 다음과 같다.
 - **[Nginx]** - 리버스 프록시 및 로드 밸런서 기능 제공
 - **[Pika]** - RabbitMQ와의 통신
 - **[GCP]** - 클라우드 환경에 인프라 구축과 및 배포
-
-
-
+         
+      
+          
 ### ✅ Install
 [**Chrome 웹스토어 링크**](https://chromewebstore.google.com/detail/patturning/nlldmjdghbedjmnbkpgjnnanpecmmpad)
-
+           
+                    
+                 
+                
 ### 👉 Contact
 [**PatTurning GitHub**](https://github.com/HyejiYu/PatTuning)
 
+                
+                  
 ### ⚕️ License
 Patturning is distributed under the terms of the Apache License (Version 2.0).  
 See [LICENSE](https://github.com/HyejiYu/PatTuning/blob/main/LICENSE) for details.
 
 """)
+    
+      
     st.divider()
 
 
