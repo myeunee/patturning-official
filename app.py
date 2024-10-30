@@ -24,8 +24,6 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-
-
 #Options Menu
 with st.sidebar:
     selected = option_menu('PatTurning', ["Intro", 'About','How To Contribute', 'Commit Convention'], 
@@ -35,37 +33,41 @@ with st.sidebar:
 # Intro 페이지
 if selected == "Intro":
     # Header
-    st.markdown("# Rascore")
-    st.markdown("### A tool for analyzing RAS protein structures")
-    st.markdown("**Created by Mitchell Parker and Roland Dunbrack**")
-    st.markdown("**Fox Chase Cancer Center**")
+    st.image(image1, caption="Patturning 배경 이미지", use_column_width=True)
     st.title('PatTurning')
-    st.write("Patturning은 온라인 쇼핑몰에서 발생하는 다크 패턴을 탐지하여 사용자에게 보다 투명한 쇼핑 경험을 제공합니다.")
+    st.write("*Patturning은 온라인 쇼핑몰에서 발생하는 다크 패턴을 탐지하여 사용자에게 보다 투명한 쇼핑 경험을 제공합니다.*")
+    st.write("Dark Pattern Sensing Chrome Extension for Online Consumer Protection.")
     st.divider()
 
+    # Install
+    st.markdown("⚕️Install")
+    st.write("[크롬 웹스토어 설치하기](https://chromewebstore.google.com/detail/patturning/nlldmjdghbedjmnbkpgjnnanpecmmpad)")
+    st.divider()
 
-    st.image(image1, caption="Patturning 배경 이미지", use_column_width=True)
+    # Support & Contact
+    st.markdown("👉 Support & Contact")
+    st.write("GitHub Repository: [Dark Pattern Detection Project](https://github.com/HyejiYu/PatTuning)")
+    st.divider()
 
     # 팀 소개
+    st.markdown("## 👥 Overview")
     st.markdown("""
     **Patturning** 팀은 경희대학교 소프트웨어융합대학 학생 5명으로 구성되어 있으며, 사용자의 합리적인 소비를 돕기 위해 다크 패턴을 감지 및 필터링하는 서비스를 개발하고 있습니다. 특히 정보 소외 계층에게 취약한 다크 패턴의 사회적 문제점을 알리려 노력합니다.
     """)
     st.divider()
 
-    # Support & Contact 섹션
-    st.header("Support & Contact")
-    st.write("GitHub Repository: [Dark Pattern Detection Project](https://github.com/HyejiYu/PatTuning)")
-    st.divider()
-
     # 라이센스
-    st.header("License")
+    st.markdown("## ✅ License")
     st.write("MIT License") 
-    
+
+
 #Intro Page
 if selected=="About":
     # 기능 소개 섹션
     st.header("Patturning의 기능")
-    st.subheader("[1] 다크패턴 탐지 기능")
+    st.divider()
+
+    st.markdown("# 1️⃣ 다크패턴 탐지 기능")
     st.write("""
     Patturning의 **다크 패턴 탐지 기능**을 통해 웹사이트에서 특정 문구가 등장할 때 해당 문구를 자동으로 블러 처리하여 사용자가 쉽게 인지할 수 있도록 합니다.
     """)
@@ -79,28 +81,38 @@ if selected=="About":
     })
 
     # 가격 추적 기능 소개
-    st.subheader("[2] 온라인 쇼핑몰 상품 가격 추적")
+    st.markdown("# 2️⃣ 온라인 쇼핑몰 상품 가격 추적")
     st.write("""
     Patturning은 온라인 쇼핑몰의 상품 가격을 추적하여 소비자가 다크 패턴에 쉽게 영향을 받지 않도록 지원합니다. 
     """)
     # (여기에는 추적된 가격 변동 그래프를 추가할 수 있습니다.)
+    st.divider()
 
     # 다크 패턴 신고 기능 소개
-    st.subheader("[3] 다크패턴 문구 신고 기능")
+    st.markdown("# 3️⃣ 다크패턴 문구 신고 기능")
+    st.divider()
 
     # 기대 효과 섹션
-    st.header("Patturning의 기대 효과")
+    st.markdown("# 💡 Patturning의 기대 효과")
     st.write("""
     - **소비자 보호 강화**: 비합리적인 구매 유도 행위를 차단하여 소비자의 권익을 보호합니다.
     - **윤리적인 웹 디자인**: 기업들이 윤리적인 웹 디자인을 추구하도록 유도합니다.
     - **사회적 가치 창출**: 투명한 커뮤니케이션 촉진을 통해 소비 환경 개선을 목표로 합니다.
     """)
+    st.divider()
 
+
+if selected == "How To Contribute":
     # 함께 하실 분 모집 섹션
-    st.header("Patturning과 함께 하실 분을 모집합니다")
+    st.markdown("# Patturning과 함께 하실 분을 모집합니다")
     st.write("""
     [1] **오픈소스 기여**: Patturning 개발에 기여할 수 있습니다. 코드 개선, 버그 수정, 새로운 기능 제안 등이 가능합니다.
     [2] **다크 패턴 관련 자문**: 윤리적 디자인과 관련된 전문가의 자문을 구하고 있습니다.
     """)
     st.write("[How to Contribute](https://www.notion.so/How-to-Contribute-7147ada1b92549538bdaa86028780734?pvs=21)")
+
+
+
+if selected == "Commit Convention":
+    st.markdown("Commition Convention")
 
