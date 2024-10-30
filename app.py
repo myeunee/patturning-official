@@ -28,48 +28,54 @@ st.markdown("""
 
 #Options Menu
 with st.sidebar:
-    selected = option_menu('PatTurning', ["Intro", 'About','How To Contribute', 'Commit Convention'], 
+    selected = option_menu('PatTurning', ["Intro", 'About','How To Contribute', 'Commit Convention', 'Members'], 
                            menu_icon="cast", default_index=0)
 
 
 # Intro 페이지
 if selected == "Intro":
     # Header
-    st.image(image1, use_column_width=True, width=300)
+    st.image(image1, use_column_width=True, width=300, height = 100)
     st.title('PatTurning')
-    st.write("Patturning은 온라인 쇼핑몰에서 발생하는 다크 패턴을 탐지하여 사용자에게 보다 투명한 쇼핑 경험을 제공합니다.")
-    st.write("Dark Pattern Sensing Chrome Extension for Online Consumer Protection.")
     st.markdown("""
-# Dillinger
-## _The Last Markdown Editor, Ever_
+## _현명한 소비의 시작, 팻터닝_
 
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
+##### 당신의 합리적인 소비를 위해, PatTurning이 다크패턴을 필터링합니다!
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+> PatTurning은 성장하는 이커머스 시장에서 점점 더 기승을 부리는 다크 패턴으로부터 소비자를 보호하기 위해 설계되었다. 
+
+- 1️⃣ 온라인 쇼핑 중 혼란이나 압박을 유발할 수 있는 잘못된 요소들을 필터링
+- 2️⃣ 최근 가격 변동을 분석하여 거짓 할인 전략을 판별해 소비자에게 합리적인 구매 근거 제공
+- 3️⃣사용자는 다크 패턴이 의심되는 텍스트를 직접 리포트할 수 있으므로, 다크 패턴 탐지 정확도를 높일 수 있음음
+
+### ⚒️ Tech
+PatTurning이 사용하는 대표 오픈소스는 다음과 같다.
+- **[Airflow]** - 데이터 파이프라인을 자동화, 워크플로우 관리
+- **[BeautifulSoup4]** - 크롤링하여 데이터 수집
+- **[FastAPI]** - 모델 서빙
+- **[TensorFlow]** - 딥러닝 모델 학습 및 추론
+- **[Scikit-Learn]** - 모델 훈련 및 평가
+- **[Spring Boot]** - 백엔드 서버 개발
+- **[Chart.js]** - 직관적이고 반응형 그래프 UI
+- **[Docker]** - 컨테이너
+- **[Nginx]** - 리버스 프록시 및 로드 밸런서 기능 제공
+- **[Pika]** - RabbitMQ와의 통신
+- **[GCP]** - 클라우드 환경에 인프라 구축과 및 배포
+
+
+
+### ✅ Install
+[**Chrome 웹스토어 링크**](https://chromewebstore.google.com/detail/patturning/nlldmjdghbedjmnbkpgjnnanpecmmpad)
+
+### 👉 Contact
+[**PatTurning GitHub**](https://github.com/HyejiYu/PatTuning)
+
+### ⚕️ License
+Patturning is distributed under the terms of the Apache License (Version 2.0).  
+See [LICENSE](https://github.com/HyejiYu/PatTuning/blob/main/LICENSE) for details.
 
 """)
     st.divider()
-
-    # Install
-    st.markdown("## ⚕️Install")
-    st.write("[크롬 웹스토어 설치하기](https://chromewebstore.google.com/detail/patturning/nlldmjdghbedjmnbkpgjnnanpecmmpad)")
-    st.divider()
-
-    # Support & Contact
-    st.markdown("## 👉 Support & Contact")
-    st.write("GitHub Repository: [Dark Pattern Detection Project](https://github.com/HyejiYu/PatTuning)")
-    st.divider()
-
-    # 팀 소개
-    st.markdown("## 👥 Members")
-    st.markdown("""
-    **Patturning** 팀은 경희대학교 소프트웨어융합대학 학생 5명으로 구성되어 있으며, 사용자의 합리적인 소비를 돕기 위해 다크 패턴을 감지 및 필터링하는 서비스를 개발하고 있습니다. 특히 정보 소외 계층에게 취약한 다크 패턴의 사회적 문제점을 알리려 노력합니다.
-    """)
-    st.divider()
-
-    # 라이센스
-    st.markdown("## ✅ License")
-    st.write("MIT License") 
 
 
 #Intro Page
@@ -471,3 +477,8 @@ if selected == "Commit Convention":
     st.write("[How to Contribute](https://www.notion.so/How-to-Contribute-7147ada1b92549538bdaa86028780734?pvs=21)")
 
 
+# Members 페이지
+if selected == "Members":
+    st.markdown("""
+> **패터닝** 팀은 경희대학교 소프트웨어융합대학 학생 5명으로 구성되어 있습니다. 저희 팀은 사용자의 합리적인 소비를 돕기 위해 다크패턴을 감지 및 필터링하는 서비스를 개발하고 있습니다. 저희 팀은 특히 정보 소외 계층에게 취약한 다크패턴의 사회적 문제점을 알리려 노력하고자 합니다.
+""")
