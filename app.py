@@ -34,24 +34,24 @@ with st.sidebar:
 # Intro 페이지
 if selected == "Intro":
     # Header
-    st.image(image1, caption="Patturning 배경 이미지", use_column_width=True)
+    st.image(image1, use_column_width=True)
     st.title('PatTurning')
     st.write("*Patturning은 온라인 쇼핑몰에서 발생하는 다크 패턴을 탐지하여 사용자에게 보다 투명한 쇼핑 경험을 제공합니다.*")
     st.write("Dark Pattern Sensing Chrome Extension for Online Consumer Protection.")
     st.divider()
 
     # Install
-    st.markdown("⚕️Install")
+    st.markdown("## ⚕️Install")
     st.write("[크롬 웹스토어 설치하기](https://chromewebstore.google.com/detail/patturning/nlldmjdghbedjmnbkpgjnnanpecmmpad)")
     st.divider()
 
     # Support & Contact
-    st.markdown("👉 Support & Contact")
+    st.markdown("## 👉 Support & Contact")
     st.write("GitHub Repository: [Dark Pattern Detection Project](https://github.com/HyejiYu/PatTuning)")
     st.divider()
 
     # 팀 소개
-    st.markdown("## 👥 Overview")
+    st.markdown("## 👥 Members")
     st.markdown("""
     **Patturning** 팀은 경희대학교 소프트웨어융합대학 학생 5명으로 구성되어 있으며, 사용자의 합리적인 소비를 돕기 위해 다크 패턴을 감지 및 필터링하는 서비스를 개발하고 있습니다. 특히 정보 소외 계층에게 취약한 다크 패턴의 사회적 문제점을 알리려 노력합니다.
     """)
@@ -68,7 +68,7 @@ if selected=="About":
     st.header("Patturning의 기능")
     st.divider()
 
-    st.markdown("# 1️⃣ 다크패턴 탐지 기능")
+    st.markdown("## 1️⃣ 다크패턴 탐지 기능")
     st.write("""
     Patturning의 **다크 패턴 탐지 기능**을 통해 웹사이트에서 특정 문구가 등장할 때 해당 문구를 자동으로 블러 처리하여 사용자가 쉽게 인지할 수 있도록 합니다.
     """)
@@ -82,7 +82,7 @@ if selected=="About":
     })
 
     # 가격 추적 기능 소개
-    st.markdown("# 2️⃣ 온라인 쇼핑몰 상품 가격 추적")
+    st.markdown("## 2️⃣ 온라인 쇼핑몰 상품 가격 추적")
     st.write("""
     Patturning은 온라인 쇼핑몰의 상품 가격을 추적하여 소비자가 다크 패턴에 쉽게 영향을 받지 않도록 지원합니다. 
     """)
@@ -90,11 +90,11 @@ if selected=="About":
     st.divider()
 
     # 다크 패턴 신고 기능 소개
-    st.markdown("# 3️⃣ 다크패턴 문구 신고 기능")
+    st.markdown("## 3️⃣ 다크패턴 문구 신고 기능")
     st.divider()
 
     # 기대 효과 섹션
-    st.markdown("# 💡 Patturning의 기대 효과")
+    st.markdown("## 💡 Patturning의 기대 효과")
     st.write("""
     - **소비자 보호 강화**: 비합리적인 구매 유도 행위를 차단하여 소비자의 권익을 보호합니다.
     - **윤리적인 웹 디자인**: 기업들이 윤리적인 웹 디자인을 추구하도록 유도합니다.
