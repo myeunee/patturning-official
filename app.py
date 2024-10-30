@@ -7,6 +7,7 @@ pageIcon = Image.open("image/page_icon.png")
 mainIcon= Image.open("image/main_icon.png")
 image1 = Image.open("image/patturning_bg.png")
 image2 = Image.open("image/guideline.png")
+issues = Image.open("image/issues.png")
 
 #Layout
 st.set_page_config(
@@ -106,11 +107,12 @@ if selected == "How To Contribute":
     st.markdown("""
 # How to Contribute
 
+</aside>
 🍀
 
 Issues Templates은 깃허브에 만들어 놓았습니다.
 
-![image.png](How%20to%20Contribute%207147ada1b92549538bdaa86028780734/image.png)
+![image.png](Image.open("image/issues.png"))
 
 - Bug Report
 - 기타 자유양식 템플릿
@@ -307,7 +309,7 @@ pip install -r requirements.txt
 
  GRU기반 다크패턴 탐지 모델입니다. 다크패턴 문구를 넣으면 어떤 다크패턴에 해당하는지 다중 분류를 수행합니다. 새로운 다크패턴 데이터셋을 활용하여 모델을 더 학습시킬 수 있습니다.
 
-### **[1] 필요한 라이브러리 설치**
+### **1️⃣ 필요한 라이브러리 설치**
 
 ```bash
 pip install huggingface_hub
@@ -321,7 +323,7 @@ tensorflow==2.11.0
 keras==2.11.0
 ```
 
-### **[2] 모델 & 토크나이저 불러오기**
+### **2️⃣ 모델 & 토크나이저 불러오기**
 
 - 모델 불러오기
 
@@ -344,7 +346,7 @@ with open(tokenizer_path, "r") as f:
 tokenizer = tokenizer_from_json(tokenizer_json)
 ```
 
-### **[3] 모델 추론하기**
+### **3️⃣ 모델 추론하기**
 
 ```python
 from sklearn.model_selection import train_test_split
@@ -388,7 +390,7 @@ ex) 100명이 보고있습니다, 300개 판매됨
 
 </aside>
 
-### **[4] 모델 학습하기**
+### **4️⃣ 모델 학습하기**
 
  새 데이터를 사용하여 모델을 추가로 훈련할 수 있습니다. 모델은 위에서 언급했듯, 기본적으로 5개의 label을 분류합니다. 다음은 추가적인 데이터로 학습시키는 예시입니다:
 
