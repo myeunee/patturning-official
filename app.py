@@ -189,7 +189,7 @@ Issues를 생성할 때에는 [RabbitMQ Queue request] 템플릿을 참고해 �
 가격 변동 추이 파악에 중요한 정보를 파악하기 위해 schedule_interval은 최대 6시간 이내로 설정되어 상품 정보는 하루에 최소 4회 기록되어야 한다.
 
 DAG는 사이트 당 하나씩 생성되도록 지정하고 있다.  
-Contributors가 크롤링하고자 하는 사이트를 PatTurning에서 이미 크롤링 중이라면 미리 개발된 DAG를 기반으로 기여해야 한다.  
+Contributors가 크롤링하고자 하는 사이트를 PatTurning에서 이미 크롤링 중이라면 미리 개발된 DAG를 기반으로 기여해야 한다. 크롤링 할 웹사이트의 `robots.txt`를 확인하여 규칙을 꼭 준수하도록 한다.
 새로운 사이트를 크롤링할 시 `contribute/*` 내 파일을 복사하여 각각의 용도에 맞는 디렉토리에서 개발한 뒤 PR해야 한다. 각 파일의 PR 위치는 다음과 같다.
 
 - **crawl_template**: `airflow/requirements/`
