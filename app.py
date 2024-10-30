@@ -34,7 +34,7 @@ with st.sidebar:
 # Intro 페이지
 if selected == "Intro":
     # Header
-    st.image(image1, use_column_width=True)
+    st.image(image1, use_column_width=True, width=300)
     st.title('PatTurning')
     st.write("*Patturning은 온라인 쇼핑몰에서 발생하는 다크 패턴을 탐지하여 사용자에게 보다 투명한 쇼핑 경험을 제공합니다.*")
     st.write("Dark Pattern Sensing Chrome Extension for Online Consumer Protection.")
