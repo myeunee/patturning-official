@@ -9,6 +9,7 @@ patturning_bg = Image.open("image/patturning_bg.png")
 guideline = Image.open("image/guideline.png")
 issues = Image.open("image/issues.png")
 mit = Image.open("image/mit.jpg")
+graph = Image.open("image/graph.png")
 
 #Layout
 st.set_page_config(
@@ -96,17 +97,17 @@ if selected=="About":
     st.markdown("""
 # Patturning의 기능
 
-### 1️⃣ 다크패턴 탐지 기능
+#### 1️⃣ 다크패턴 탐지 기능
 
 Patturning의 **다크 패턴 탐지 기능**을 통해 웹사이트에서 특정 문구가 등장할 때 해당 문구를 자동으로 블러 처리하여 사용자가 쉽게 인지할 수 있도록 한다.
   """)
-
+    st.image(graph, use_column_width=True, width=300)
     st.write("")
     st.divider()
     st.markdown("""
-#### 다크 패턴 문구 예시
+##### 다크 패턴 문구 예시
   """)
-    st.image(guideline, caption="공정거래위원회 가이드라인", width=300)
+    st.image(guideline, caption="공정거래위원회 가이드라인", width=500)
     st.markdown("""
 
 
@@ -120,13 +121,13 @@ Patturning의 **다크 패턴 탐지 기능**을 통해 웹사이트에서 특�
 ---
                 
 
-### 2️⃣ 온라인 쇼핑몰 상품 가격 추적
+#### 2️⃣ 온라인 쇼핑몰 상품 가격 추적
 
 Patturning은 온라인 쇼핑몰의 상품 가격을 추적하여 소비자가 다크 패턴에 쉽게 영향을 받지 않도록 지원한다.
 
 ---
 
-### 3️⃣ 다크패턴 문구 신고 기능
+#### 3️⃣ 다크패턴 문구 신고 기능
 
 Patturning은 사용자가 직접적으로 불편함을 느끼는 다크패턴 요소를 신고 기능을 통해 수집한다.
 이를 통해, 서비스가 기반을 두고 있는 필터링 모델의 신뢰도를 지속적으로 보완하여 소비자 불편을 제거하는 것을 목표로 한다.
@@ -144,7 +145,7 @@ Patturning은 사용자가 직접적으로 불편함을 느끼는 다크패턴 �
 
 if selected == "How To Contribute":
     st.markdown("""
-Patturning은 [MQ Producer](#Producer), [Airflow DAG](#Airflow-DAG), [Model](#Model-학습-및-사용-방법) 에 대한 contribution이 가능하다.
+**Patturning은 [MQ Producer](#Producer), [Airflow DAG](#Airflow-DAG), [Model](#Model-학습-및-사용-방법) 에 대한 contribution이 가능하다.**
 
 ### Producer
 
@@ -397,9 +398,11 @@ $ python labeling.py
                 """)
 
 
+
+
+
+
 if selected == "Commit Convention":
-    st.markdown("Commition Convention")
-    # 함께 하실 분 모집 섹션
     st.markdown("""
 ### Issue Templates
 원하는 작업에 알맞은 템플릿을 사용해 이슈를 생성한다.
@@ -480,5 +483,7 @@ e.g.
 # Members 페이지
 if selected == "Members":
     st.markdown("""
-> **패터닝** 팀은 경희대학교 소프트웨어융합대학 학생 5명으로 구성되어 있습니다. 저희 팀은 사용자의 합리적인 소비를 돕기 위해 다크패턴을 감지 및 필터링하는 서비스를 개발하고 있습니다. 저희 팀은 특히 정보 소외 계층에게 취약한 다크패턴의 사회적 문제점을 알리려 노력하고자 합니다.
+> **패터닝** 팀은 경희대학교 소프트웨어융합대학 학생 5명으로 구성되어 있습니다. 
+> 저희 팀은 사용자의 합리적인 소비를 돕기 위해 다크패턴을 감지 및 필터링하는 서비스를 개발하고 있습니다. 
+> 특히 정보 소외 계층에게 취약한 다크패턴의 사회적 문제점을 알리려 노력하고자 합니다.
 """)
