@@ -10,6 +10,7 @@ guideline = Image.open("image/guideline.png")
 issues = Image.open("image/issues.png")
 mit = Image.open("image/mit.jpg")
 graph = Image.open("image/graph.png")
+filtering = Image.open("image/filtering.png")
 
 #Layout
 st.set_page_config(
@@ -101,13 +102,13 @@ if selected=="About":
 
 Patturning의 **다크 패턴 탐지 기능**을 통해 웹사이트에서 특정 문구가 등장할 때 해당 문구를 자동으로 블러 처리하여 사용자가 쉽게 인지할 수 있도록 한다.
   """)
-    st.image(graph, use_column_width=True, width=300)
+    st.image(filtering, use_column_width=True, width=600)
     st.write("")
     st.divider()
     st.markdown("""
 ##### 다크 패턴 문구 예시
   """)
-    st.image(guideline, caption="공정거래위원회 가이드라인", width=500)
+    st.image(guideline, caption="공정거래위원회 가이드라인", width=600)
     st.markdown("""
 
 
@@ -124,6 +125,9 @@ Patturning의 **다크 패턴 탐지 기능**을 통해 웹사이트에서 특�
 #### 2️⃣ 온라인 쇼핑몰 상품 가격 추적
 
 Patturning은 온라인 쇼핑몰의 상품 가격을 추적하여 소비자가 다크 패턴에 쉽게 영향을 받지 않도록 지원한다.
+""")
+    st.image(filtering, use_column_width=True, width=600)
+    st.markdown("""
 
 ---
 
