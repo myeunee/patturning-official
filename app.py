@@ -102,7 +102,7 @@ if selected=="About":
 
 Patturning의 **다크 패턴 탐지 기능**을 통해 웹사이트에서 특정 문구가 등장할 때 해당 문구를 자동으로 블러 처리하여 사용자가 쉽게 인지할 수 있도록 한다.
   """)
-    st.image(filtering, use_column_width=True, width=600)
+    st.image(filtering, width=600)
     st.write("")
     st.divider()
     st.markdown("""
@@ -126,7 +126,7 @@ Patturning의 **다크 패턴 탐지 기능**을 통해 웹사이트에서 특�
 
 Patturning은 온라인 쇼핑몰의 상품 가격을 추적하여 소비자가 다크 패턴에 쉽게 영향을 받지 않도록 지원한다.
 """)
-    st.image(filtering, use_column_width=True, width=600)
+    st.image(graph, width=600)
     st.markdown("""
 
 ---
