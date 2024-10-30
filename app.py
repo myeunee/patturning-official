@@ -31,11 +31,10 @@ with st.sidebar:
     selected = option_menu('PatTurning', ["Intro", 'About','How To Contribute', 'Commit Convention', 'Members'], 
                            menu_icon="cast", default_index=0)
 
-
 # Intro 페이지
 if selected == "Intro":
     # Header
-    st.image(image1, use_column_width=True, width=300, height = 100)
+    st.image(image1, use_column_width=True, width=300)
     st.title('PatTurning')
     st.markdown("""
 ## _현명한 소비의 시작, 팻터닝_
