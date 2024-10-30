@@ -8,6 +8,7 @@ mainIcon= Image.open("image/main_icon.png")
 image1 = Image.open("image/patturning_bg.png")
 image2 = Image.open("image/guideline.png")
 issues = Image.open("image/issues.png")
+mit = Image.open("image/mit.jpg")
 
 #Layout
 st.set_page_config(
@@ -36,8 +37,17 @@ if selected == "Intro":
     # Header
     st.image(image1, use_column_width=True, width=300)
     st.title('PatTurning')
-    st.write("*Patturning은 온라인 쇼핑몰에서 발생하는 다크 패턴을 탐지하여 사용자에게 보다 투명한 쇼핑 경험을 제공합니다.*")
+    st.write("Patturning은 온라인 쇼핑몰에서 발생하는 다크 패턴을 탐지하여 사용자에게 보다 투명한 쇼핑 경험을 제공합니다.")
     st.write("Dark Pattern Sensing Chrome Extension for Online Consumer Protection.")
+    st.markdown("""
+# Dillinger
+## _The Last Markdown Editor, Ever_
+
+[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
+
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+
+""")
     st.divider()
 
     # Install
