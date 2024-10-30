@@ -106,7 +106,7 @@ Patturning의 **다크 패턴 탐지 기능**을 통해 웹사이트에서 특�
     st.markdown("""
 #### 다크 패턴 문구 예시
   """)
-    st.image(guideline, caption="공정거래위원회 가이드라인", use_column_width=True, width=300)
+    st.image(guideline, caption="공정거래위원회 가이드라인", width=100)
     st.markdown("""
 
 
