@@ -20,5 +20,5 @@ jobs:
         script: |
           cd /home/${{secrets.USERNAME}}/patturning-official
           git pull origin main
-          source streamlit_env/bin/activate 
+          source /home/${{secrets.USERNAME}}/streamlit_env/bin/activate 
           nohup streamlit run app.py &> streamlit.log &
