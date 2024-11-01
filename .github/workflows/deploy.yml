@@ -19,6 +19,8 @@ jobs:
         debug: true
         script: |
           cd /home/${{secrets.USERNAME}}/patturning-official
+          git reset --hard
+          git clean -fd
           git pull origin main
           source /home/${{secrets.USERNAME}}/streamlit_env/bin/activate 
-          nohup streamlit run app.py --server.port 8501 --server.enableCORS false > ../streamlit.log 2>&1 &
+          nohup streamlit run app.py &> streamlit.log &
