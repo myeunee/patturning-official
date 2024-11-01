@@ -21,4 +21,4 @@ jobs:
           cd /home/${{secrets.USERNAME}}/patturning-official
           git pull origin main
           source /home/${{secrets.USERNAME}}/streamlit_env/bin/activate 
-          nohup streamlit run app.py &> streamlit.log &
+          nohup streamlit run app.py --server.port 8501 --server.enableCORS false > ../streamlit.log 2>&1 &
