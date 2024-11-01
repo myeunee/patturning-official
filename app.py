@@ -77,15 +77,15 @@ PatTurning이 사용하는 대표 오픈소스는 다음과 같다.
     st.divider()
     st.markdown("""        
 ### 👉 Contact
-[**PatTurning GitHub**](https://github.com/HyejiYu/PatTuning)
+[**PatTurning GitHub**](https://github.com/HyejiYu/PatTurning)
   """)
 
     st.write("")
     st.divider()
     st.markdown("""                     
 ### ⚕️ License
-Patturning is distributed under the terms of the Apache License (Version 2.0).  
-See [LICENSE](https://github.com/HyejiYu/PatTuning/blob/main/LICENSE) for details.
+Patturning is distributed under the terms of the **GPL 3.0**.  
+See [LICENSE](https://github.com/HyejiYu/PatTurning/blob/main/LICENSE) for details.
 
 """)
     
@@ -376,7 +376,7 @@ model.fit(X_train, y_train_one_hot, epochs=5, batch_size=32)
 1. 우선, 다음 과정들을 수행한다.
 
 ```bash
-$ git clone https://github.com/HyejiYu/PatTuning.git
+$ git clone https://github.com/HyejiYu/PatTurning.git
 $ cd Patturning/contribute/model
 ```
 
