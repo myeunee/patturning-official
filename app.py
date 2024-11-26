@@ -83,7 +83,7 @@ PatTurning이 사용하는 대표 오픈소스는 다음과 같다.
     st.write("")
     st.divider()
     st.markdown("""                     
-### ⚕️ License
+### ⚕️ License - GPL 3.0
 Patturning is distributed under the terms of the **GPL 3.0**.  
 See [LICENSE](https://github.com/HyejiYu/PatTurning/blob/main/LICENSE) for details.
 
